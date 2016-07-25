@@ -8,6 +8,13 @@ $(function() {
     $('.templatemo-nav').singlePageNav({
     	offset: 70
     });
+    
+    function noclick()
+	{
+	alert('Not allowed');
+	return(false);
+	}
+    document.oncontextmenu = noclick();
 
     /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
